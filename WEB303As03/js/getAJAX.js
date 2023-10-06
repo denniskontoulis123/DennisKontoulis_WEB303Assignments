@@ -22,7 +22,7 @@ function DisplayTeamData(data) {
     $("team").empty(); // dump the stuff like last file
     $.each(data, function(index, member) { // iterate and show all
         $("#team").append('<h2>' + member.name + '</h2>');
-        $("#team").append('<h5>' + member.name + '</h5>');
-        $("#team").append('<p>' + member.name + '</p>');
+        $("#team").append('<h5>' + member.position + '</h5>');
+        $("#team").append('<p>' + member.bio + '</p>');
     });
 }

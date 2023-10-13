@@ -1,12 +1,25 @@
 /*
     Assignment #4
-    {Your name here}
+    Name: Dennis Kontoulis
+    DLM: 2023-10-13
+    Student #: 0798883
 */
 
 $(function () {
     // your code here
 
+$(function () {
+    if (!mnavigator.geolocation) { // error msg for if geolocation dont work
+        alert("Geolocation is not supported by your browser!");
+        return;
+    }
 
+    function handleSuccess(position) {
+        var currentLat = position.coords.latitude;
+        var currentLon = position.coords.longitude;
+        
+    }
+})
 
 
 

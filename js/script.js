@@ -23,11 +23,11 @@ $(function () {
         if (previousLocation) {
             previousLocation = JSON.parse(previousLocation);
             var dist = calcDistanceBetweenPoints(currentLat, currentLon, previousLocation.lat, previousLocation.lon);
-            $('<div>').text("Previous Location: Latitude: " + previousLocation.lat + ", Longitude: " + previousLocation.lon).appendTo('#content');
-            $('<h3>').text('Welcome back!').appendTo('#content');
-            $('<p>').text('You traveled ' + dist.toFixed(2) + ' meters since your last visit.').appendTo('#content');
+            $('<div>').text("Previous Location: Latitude: " + previousLocation.lat + ", Longitude: " + previousLocation.lon).appendTo('#locationhere');
+            $('<h3>').text('Welcome back!').appendTo('#locationhere');
+            $('<p>').text('You traveled ' + dist.toFixed(2) + ' meters since your last visit.').appendTo('#locationhere');
         } else {
-            $('<h3>').text('Welcome to the page for the first time!').appendTo('#content');
+            $('<h3>').text('Welcome to the page for the first time!').appendTo('#locationhere');
         }
 
         localStorage.setItem('location', JSON.stringify({ lat: currentLat, lon: currentLon}));

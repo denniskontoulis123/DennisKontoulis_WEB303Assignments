@@ -14,11 +14,30 @@ $(function () {
         return;
     }
 
-    function handleSuccess(position) {
+    function handleSuccess(position) { // variables for long + lat
         var currentLat = position.coords.latitude;
         var currentLon = position.coords.longitude;
-        
+        $('#locationhere').text("Latitude: "+ currentLat +", Longitude: " +  currentLon);
+
+        var previousLocation = localStorage.getItem('location');
+        if (previousLocation) {
+            previousLocation = JSON.parse(previousLocation);
+            var dist = calcDistanceBetweenPoints(currentLat, currentLon, previousLocation.lat, previousLocation.lon);
+            $('<div>').text("Previous Location: Latitude: " + previousLocation.lat + ", Longitude: " + previousLocation.lon).appendTo('#content');
+            $('<h3>').text('Welcome back!').appendTo('#content');
+            $('<p>').text('You traveled ' + dist.toFixed(2) + ' meters since your last visit.').appendTo('#content');
+        } else {
+            $('<h3>').text('Welcome to the page for the first time!').appendTo('#content');
+        }
+
+        localStorage.setItem('location', JSON.stringify({ lat: currentLat, lon: currentLon}));
     }
+
+    function handleError() {
+        alert("You must allow gelocation in order to use the application.");
+    }
+
+    navigator.geolocation.getCurrentPosition(handleSuccess, handleError);
 })
 
 

@@ -6,10 +6,7 @@
 */
 
 $(function () {
-    // your code here
-
-$(function () {
-    if (!mnavigator.geolocation) { // error msg for if geolocation dont work
+    if (!navigator.geolocation) { // error msg for if geolocation dont work
         alert("Geolocation is not supported by your browser!");
         return;
     }
@@ -60,7 +57,6 @@ $(function () {
         var c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
 
         return (R * c);
-    }
-});
+    };
 
 

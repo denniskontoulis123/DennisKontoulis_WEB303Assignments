@@ -3,6 +3,7 @@
     Name: Dennis Kontoulis
     Date: 27-10-2023
 */
+import { ContentItem } from 'ContentItem.js';
 
 $(document).ready(function () {
     let smartphones = [

@@ -16,7 +16,7 @@ $(document).ready(function () {
     $("#content h2").text("Top Smartphones 2023"); 
 
     smartphones.forEach(smartphone => {
-        $("content-item-list").append(smartphone.toString());
+        $("#content-item-list").append(smartphone.toString());
     });
 
     $(".content-item-wrapper").css({

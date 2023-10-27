@@ -17,7 +17,7 @@ class ContentItem {
     toString () {
         return `
         <div class="content-item-wrapper" id=content-item-${this.id}">
-            <h4>${this.name}</h4>
+            <h2>${this.name}</h2>
             <p>${this.description}</p>
             <div>${this.categoryGenre}</div>
             </div>

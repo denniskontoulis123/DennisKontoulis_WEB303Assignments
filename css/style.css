@@ -3,6 +3,19 @@ html, body{
     padding: 0;
 }
 
+#intro {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+#intro > img {
+    max-width: 250px;
+    height: auto;
+    border-radius: 10px;
+}
+
 body {
     font-family:'Courier New', Courier, monospace;
 }
@@ -37,4 +50,16 @@ main {
 #tabs ul li {
     flex-grow: 1;
     text-align: center;
+}
+
+#tabs ul li a{
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    border-bottom: 3px solid transparent;
+}
+
+#tabs ul li a.active{
+    border-bottom: 3px solid black;
 }

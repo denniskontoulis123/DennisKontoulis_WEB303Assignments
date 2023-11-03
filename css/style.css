@@ -2,3 +2,39 @@ html, body{
     margin: 0;
     padding: 0;
 }
+
+body {
+    font-family:'Courier New', Courier, monospace;
+}
+
+header {
+    background-color: #3d2d09;
+    color: white;
+    text-align: center;
+    padding: 7px 0;
+}
+
+main {
+    width: 80%;
+    margin: 20px auto;
+}
+
+#accordion .content, .tab-content {
+    display: none;
+    padding: 10px;
+    background-color: #9fe2f3;
+    border: 1px solid black;
+}
+
+#tabs ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+#tabs ul li {
+    flex-grow: 1;
+    text-align: center;
+}

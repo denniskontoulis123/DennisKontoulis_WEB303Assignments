@@ -1,6 +1,6 @@
 (function ($) {
-    $.fn.photoVier = function() {
-        var $photoBox = this.find(.'photo-box');
+    $.fn.photoViewer = function() {
+        var $photoBox = this.find('.photo-box');
         var $thumbnails = this.find('.thumbnail-anchor');
 
         $thumbnails.click(function(e) {

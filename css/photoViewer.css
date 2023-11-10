@@ -28,3 +28,17 @@
 }
 #photo-viewer .thumbnail-anchor img.active {
 }
+
+#photo-frame.is-loading:after {
+  content: url('../img/load.gif');
+  position: absolute;
+  top: 0;
+  left: 0;
+  }
+  #photo-frame img {
+  position: absolute;
+  max-width: 100%;
+  max-height: 100%;
+  top: 50%;
+  left: 50%;
+  }

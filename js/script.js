@@ -1,32 +1,11 @@
-$(document).ready(function() {
-    // accordion stuff
-    $("#accordion h2").click(function () {
-        var isPanelOpen = $(this).next().is(":visible");
-
-        $(this).closest('#accordion').find('.content').slideUp();
-
-        // expand panel if not open
-        if (!isPanelOpen) {
-            $(this).next().slideDown();
-        }
+$(function () {
+    $('#photo-viewer').customPhotoViewer().show().on('click', '.photo-box', function (e) {
+        var $content = $(this).clone().find('img').css({
+            marginLeft: 0,
+            marginTop: 0,
+            width: '100%',
+            height: 'auto'
+        });
+        //modal code goes here
     });
-
-    // tab functionality
-    $("#tabs ul li a").click(function(e) {
-        e.preventDefault();
-
-        // cuts the class
-        $("#tabs ul li a").removeClass("active");
-
-        // add class
-        $(this).addClass("active");
-
-        // hide tab
-        $(".tab-content").hide();
-
-        // show content
-        $($(this).attr('href')).show();
-    });
-
-    $("#tabs ul li:first-child a").click();
-})
+});

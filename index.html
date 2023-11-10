@@ -2,101 +2,24 @@
 
 <head>
     <link href="css/style.css" rel="stylesheet">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Joseph Gordon-Levitt Fanpage</title>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <!--Name: Dennis Kontoulis
-    Student #: 0798883
-    DLM: 2023-11-03
-    Source: I only intend to use https://en.wikipedia.org/wiki/Joseph_Gordon-Levitt and https://en.wikipedia.org/wiki/List_of_awards_and_nominations_received_by_Joseph_Gordon-Levitt,
-also used https://tvline.com/casting-news/joseph-gordon-levitt-uber-ceo-travis-kalanick-super-pumped-cast-showtime-1234676251/ for the image-->
+    <link href="css/photoViewer.css" rel="stylesheet">
 </head>
 
 <body>
-    <header>
-        <H1>
-        Joseph Gordon-Levitt
-        </H1>
-    </header>
-    <main>
-        <section id="intro">
-            <img src="jgl.png" alt="Joseph Gordon-Levitt">
-            <p>
-                Joseph Gordon-Levitt, or JGL for short, is an American actor, philanthrophist and father; he's well desired in Hollywood, and massively talented.
-            </p>
-        </section>
-
-        <!-- all my accordions gonna go here-->
-        <div id="accordion">
-            <h2>Biography</h2>
-            <div class="content">
-                <p>JGL was born on February 17th, 1981 in LA, California.  He was born to a Ashkenazi Jewish family, and his parents were founders of the Progressive Jewish Alliance.  
-                Gordon's father was once the news director for the Pacifica Radio station.  His mother ran for congress before he was born.  His grandfather was a Hollywood film director; 
-                one can argue that it was always in the cards for him to be such a succesful actor!</p>
-            </div>
-            <h2>Career</h2>
-            <div class="content">
-                <p>JGL has been part of a massive laundry list of movies.  His career goes as far back as featuring in movies such as Halloween H20, and the hit classic 10 Things I Hate About You.  
-                He also does voice work; having voiced in Treasure Planet as well as a film from the monolith of animated films, Studio Ghibli, in The Wind Rises.  </p>
-            </div>
-            <h2>Awards</h2>
-            <div class="content">
-                <p>While JGL has not won an Academy Award, he has won other awards; 10 total, to go alongside 48 total nominations.  He has won an Emmy for his work on television show Create Together, 
-                as well as Satelitte and Screen Actors Guild Awards for The Trial of the Chicago 7 (a fantastic movie that in my opinion deserved Oscars).  Astoundingly, he had never won anything for 
-                his most notable film; (500) Days of Summer, though he came close.</p>
-            </div>
+    <h1><!-- your name goes here --> Photo Gallery</h1>
+    <div id="photo-viewer">
+        <a href="#" class="photo-box is-loading"></a>
+        <div class="photo-thumbnails">
+            <a href="img/full-sized-photo-1.png" class="thumbnail-anchor active" title="photo 1">
+                <img src="img/thumbnail-photo-1.png" alt="thumbnail 1">
+            </a>
+            <a href="img/full-sized-photo-2.png" class="thumbnail-anchor" title="photo 2">
+                <img src="img/thumbnail-photo-2.png" alt="thumbnail 2">
+            </a>
+            <!-- Add more images here -->
         </div>
-
-        <!-- tabs here-->
-        <div id="tabs">
-            <ul>
-                <li><a href="#tab1">Early Life</a></li>
-                <li><a href="#tab2">Filmography</a></li>
-                <li><a href="#tab3">Directorial Work</a></li>
-                <li><a href="#tab4">Personal Life</a></li>
-                <li><a href="#tab5">Philanthrophy</a></li>
-            </ul>
-            <div id="tab1" class="tab-content">
-                <p>Joseph started his acting career early by playing Scarecrow in a production of The Wizard of Oz.  He was approached by an agent shortly thereafter and began 
-                appearing on television series as well as in commericals.  At six he starred in several made-for-television films.  His breakout roles would wind up being supporting roles in 
-                Halloween H20: 20 Years Later as well as 10 Things I Hate About you- a modenr retelling of Shakespare's Taming of the Shrew.  His talent would not go unnoticed, landing him his voice acting 
-                role in Treasure Island.  In 2000 he began attending columbus university, where he studied history, literature and French Poetry.  He attributes his growth as an invidual to 
-                his move to New York City in his youth.  He would eventually drop out to concentrate solely on his acting career. </p>
-            </div>
-            <div id="tab2" class="tab-content">
-                <p>JGL has been part of dozens of productions.  His most notable have been:
-                    <ul>
-                        <li>(500) Days of Summer, 2009</li>
-                        <li>10 Things I Hate About You, 1999</li>
-                        <li>Halloween H20: 20 Years Later, 1998</li>
-                        <li>50/50, 2011</li>
-                        <li>Premium Rush, 2012</li>
-                        <li>Lincoln, 2012</li>
-                        <li>Looper, 2012</li>
-                        <li>...and many more!</li>
-        
-                    </ul>
-                </p>
-            </div>
-            <div id="tab3" class="tab-content">
-               <p>JGL has really only directed one film- Don Jon in 2013 -but it was released to positive critic reviews as well as high audience favor.  He has directed short films, 
-                but nothing else for the so called big screen.  Don Jon, though, was a tremendous film in my opinion, and a wonderful critique of masculinity and how society forces 
-                harmful stereotypes onto men writ large.
-               </p>
-            </div>
-            <div id="tab4" class="tab-content">
-                JGL is known for his discretion.  However, it is publicly known that he married Tasha McCauley, a robotics engineer and entrepreneur, in December 2014.  The couple is known for their commitment to keeping their relationship out of the public eye.  
-                They have two sons, born in August 2015 and June 2017, respectively.  JGL has expressed his desire to protect his children's privacy and provide them with as normal a childhood as possible, away from the limelight.  Apart from his acting career, Gordon-Levitt is a musician; 
-                he plays the guitar, drums, and harmonica.  He has also showcased his singing abilities in various films and TV shows.
-            </div>
-            <div id="tab5" class="tab-content">
-                Joseph Gordon-Levitt is not only recognized for his versatile acting skills but also for his philanthropic efforts. He is the founder of hitRECord, an online collaborative media platform that encourages artists from around the world to 
-                collaborate on various creative projects.  The platform has been used to support charitable causes, and profits from certain projects are donated to various charities.  Gordon-Levitt has also been involved in other charitable works.  
-                In 2016, he participated in the charitable event Hilarity for Charity, organized by Seth Rogen and his wife, Lauren Miller Rogen, to raise awareness and funds for Alzheimer's disease. Additionally, he has supported the charity Artists for Peace and Justice, 
-                which aims to serve communities in Haiti through programs in education, healthcare, and dignity through the arts.
-            </div>
-        </div>
-    </main>
+    </div>
+	<script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
 </body>
 

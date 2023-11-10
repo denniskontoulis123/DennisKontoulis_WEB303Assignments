@@ -6,6 +6,7 @@
   display: block;
   width: 800px;
   height: 450px;
+  border: 2px solid black;
 }
 #photo-viewer .photo-box.is-loading::after {
   content: "Loading...";
@@ -27,6 +28,7 @@
   height: 45px;
 }
 #photo-viewer .thumbnail-anchor img.active {
+  border: 20px solid black;
 }
 
 #photo-frame.is-loading:after {

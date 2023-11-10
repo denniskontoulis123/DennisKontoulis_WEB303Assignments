@@ -6,9 +6,12 @@
         $thumbnails.click(function(e) {
             e.preventDefault();
             var $this = $(this);
-            var newSrc = $this.attr('href');
+            var newSrc = $this.attr('href').replace('\\', '/'); // Correct the image path
 
+            // change main image
             $photoBox.removeClass('is-loading').css('background-image', 'url('+ newSrc +')');
+
+            // thumbnail update
             $thumbnails.removeClass('active');
             $this.addClass('active');
         });
@@ -16,6 +19,4 @@
         return this;
     };
 })(jQuery);
-$(document).ready(function() {
-    $('photo-viewer').photoViewer();
-});
+

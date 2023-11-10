@@ -24,11 +24,12 @@
   left: 50%;
 }
 #photo-viewer .thumbnail-anchor img {
+  border: 2px solid transparent;
   width: 80px;
   height: 45px;
 }
-#photo-viewer .thumbnail-anchor img.active {
-  border: 20px solid black;
+.thumbnail-anchor img.active {
+  border: 20px solid firebrick;
 }
 
 #photo-frame.is-loading:after {
@@ -36,11 +37,19 @@
   position: absolute;
   top: 0;
   left: 0;
-  }
-  #photo-frame img {
+}
+
+
+#photo-frame img {
   position: absolute;
   max-width: 100%;
   max-height: 100%;
   top: 50%;
   left: 50%;
-  }
+}
+
+.photo-box {
+  background-size: contain; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+}

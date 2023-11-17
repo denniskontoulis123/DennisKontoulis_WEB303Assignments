@@ -1,4 +1,4 @@
-(document).ready(function() {
+$(document).ready(function() {
     // Fetching character data from the JSON file
     $.ajax({
         url: 'characters.json', 
@@ -27,10 +27,9 @@
     }
 
     // Search functionality
-    let searchBox = $('<input>').attr('type', 'text').attr('placeholder', 'Search by first name...');
-    searchBox.on('input', function() {
+    $('#searchBox').on('input', function() {
         let searchTerm = $(this).val().toLowerCase();
-        $('table tr').each(function() {
+        $('#charactersTable tr').each(function() {
             let firstName = $(this).find('td:first').text().toLowerCase();
             if (firstName.includes(searchTerm)) {
                 $(this).css({'background-color': 'darkgreen', 'color': 'white'});
@@ -39,7 +38,6 @@
             }
         });
     });
-    $('body').prepend(searchBox);
 
 
     // Filter buttons
@@ -71,7 +69,7 @@
             if (firstLetter >= 'A' && firstLetter <= 'M') countAM++;
             if (firstLetter >= 'N' && firstLetter <= 'Z') countNZ++;
         });
-        buttonAM.text(`A - M (${countAM})`);
-        buttonNZ.text(`N - Z (${countNZ})`);
+        $('#filterAM').text(`A - M (${countAM})`);
+        $('#filterNZ').text(`N - Z (${countNZ})`);
     }
 });

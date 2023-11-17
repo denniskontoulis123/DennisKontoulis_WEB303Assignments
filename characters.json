@@ -1,0 +1,59 @@
+[
+    {
+        "firstName": "Yuji",
+        "lastName": "Itadori",
+        "age": 15,
+        "occupation": "Student",
+        "school": "Jujutsu High",
+        "ability": "Curse Power"
+    },
+    {
+        "firstName": "Megumi",
+        "lastName": "Fushiguro",
+        "age": 16,
+        "occupation": "Student",
+        "school": "Jujutsu High",
+        "ability": "Ten Shadows Technique"
+    },
+    {
+        "firstName": "Nobara",
+        "lastName": "Kugisaki",
+        "age": 16,
+        "occupation": "Student",
+        "school": "Jujutsu High",
+        "ability": "Straw Doll Technique"
+    },
+    {
+        "firstName": "Gojo",
+        "lastName": "Satoru",
+        "age": 24,
+        "occupation": "Instructor",
+        "school": "Jujutsu High",
+        "ability": "Six Eyes"
+    },
+    {
+        "firstName": "Panda",
+        "lastName": "None",
+        "age": 16,
+        "occupation": "Student",
+        "school": "Jujutsu High",
+        "ability": "Three Hearts"
+    },
+    {
+        "firstName": "Maki",
+        "lastName": "Zenin",
+        "age": 16,
+        "occupation": "Student",
+        "school": "Jujutsu High",
+        "ability": "Heavenly Restriction"
+    },
+    {
+        "firstName": "Yuta",
+        "lastName": "Okkotsu",
+        "age": 18,
+        "occupation": "Student",
+        "school": "Jujutsu High",
+        "ability": "Mimicry"
+    }
+    
+]

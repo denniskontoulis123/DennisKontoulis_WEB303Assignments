@@ -43,10 +43,10 @@
 
 
     // Filter buttons
-    let buttonAM = $('<button>').text('A - M ()').on('click', function() {
+    $('#filterAM').on('click', function() {
         filterNames('A', 'M');
     });
-    let buttonNZ = $('<button>').text('N - Z ()').on('click', function() {
+    $('#filterNZ').on('click', function() {
         filterNames('N', 'Z');
     });
 

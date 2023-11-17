@@ -12,17 +12,7 @@
 
     // Function to create the table with character data
     function createTable(characters) {
-        let table = $('<table>').addClass('character-table');
-        let headerRow = $('<tr>').append(
-            '<th>First Name</th>',
-            '<th>Last Name</th>',
-            '<th>Age</th>',
-            '<th>Occupation</th>',
-            '<th>School</th>',
-            '<th>Ability</th>'
-        );
-        table.append(headerRow);
-
+        let tbody = $("#charactersTable tbody");
         $.each(characters, function(i, character) {
             let row = $('<tr>').append(
                 `<td>${character.firstName}</td>`,
@@ -32,10 +22,8 @@
                 `<td>${character.school}</td>`,
                 `<td>${character.ability}</td>`
             );
-            table.append(row);
+            tbody.append(row);
         });
-
-        $('body').append(table);
     }
 
     // Search functionality
@@ -53,4 +41,37 @@
     });
     $('body').prepend(searchBox);
 
+
+    // Filter buttons
+    let buttonAM = $('<button>').text('A - M ()').on('click', function() {
+        filterNames('A', 'M');
+    });
+    let buttonNZ = $('<button>').text('N - Z ()').on('click', function() {
+        filterNames('N', 'Z');
+    });
+
+    $('body').append(buttonAM, buttonNZ);
+
+    function filterNames(start, end) {
+        $('table tr:gt(0)').each(function() {
+            let lastName = $(this).find('td:nth-child(2)').text();
+            if (lastName.charAt(0).toUpperCase() >= start && lastName.charAt(0).toUpperCase() <= end) {
+                $(this).show();
+            } else {
+                $(this).hide();
+            }
+        });
+    }
+
+    function updateFilterCounts(characters) {
+        let countAM = 0;
+        let countNZ = 0;
+        $.each(characters, function(i, character) {
+            let firstLetter = character.lastName.charAt(0).toUpperCase();
+            if (firstLetter >= 'A' && firstLetter <= 'M') countAM++;
+            if (firstLetter >= 'N' && firstLetter <= 'Z') countNZ++;
+        });
+        buttonAM.text(`A - M (${countAM})`);
+        buttonNZ.text(`N - Z (${countNZ})`);
+    }
 });

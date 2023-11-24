@@ -5,7 +5,8 @@
         "age": 15,
         "occupation": "Student",
         "school": "Jujutsu High",
-        "ability": "Curse Power"
+        "ability": "Curse Power",
+        "date": "2003-03-20"
     },
     {
         "firstName": "Megumi",
@@ -13,7 +14,8 @@
         "age": 16,
         "occupation": "Student",
         "school": "Jujutsu High",
-        "ability": "Ten Shadows Technique"
+        "ability": "Ten Shadows Technique",
+        "date": "2003-02-24"
     },
     {
         "firstName": "Nobara",
@@ -29,7 +31,8 @@
         "age": 28,
         "occupation": "Instructor",
         "school": "Jujutsu High",
-        "ability": "Six Eyes"
+        "ability": "Six Eyes",
+        "date": "1997-05-23"
     },
     {
         "firstName": "Panda",
@@ -37,7 +40,8 @@
         "age": 16,
         "occupation": "Student",
         "school": "Jujutsu High",
-        "ability": "Three Hearts"
+        "ability": "Three Hearts",
+        "date": "2000-03-13"
     },
     {
         "firstName": "Maki",
@@ -45,7 +49,8 @@
         "age": 16,
         "occupation": "Student",
         "school": "Jujutsu High",
-        "ability": "Heavenly Restriction"
+        "ability": "Heavenly Restriction",
+        "date": "2004-02-02"
     },
     {
         "firstName": "Yuta",
@@ -53,7 +58,8 @@
         "age": 18,
         "occupation": "Student",
         "school": "Jujutsu High",
-        "ability": "Mimicry"
+        "ability": "Mimicry",
+        "date": "2002-02-24"
     }
     
 ]

@@ -23,7 +23,8 @@
         "age": 16,
         "occupation": "Student",
         "school": "Jujutsu High",
-        "ability": "Straw Doll Technique"
+        "ability": "Straw Doll Technique",
+        "date": "2003-06-24"
     },
     {
         "firstName": "Gojo",

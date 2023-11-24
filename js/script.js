@@ -32,7 +32,7 @@ $(document).ready(function() {
                 `<td>${character.age}</td>`,
                 `<td>${character.occupation}</td>`,
                 `<td>${character.school}</td>`,
-                `<td>${character.ability}</td>`
+                `<td>${character.ability}</td>`,
                 `<td>${character.date}</td>`
             );
             tbody.append(row);

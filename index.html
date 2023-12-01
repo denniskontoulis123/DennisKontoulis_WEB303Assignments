@@ -1,16 +1,37 @@
+<!DOCTYPE html>
 <html>
-
 <head>
     <link href="css/style.css" rel="stylesheet">
 </head>
-
 <body>
-    <h1>
-        <!-- your name goes here -->
-    </h1>
+    <h1>Dennis Kontoulis</h1>
 
-    <script type="text/javascript" src="js/jquery.js"></script>
-    <script type="text/javascript" src="js/script.js"></script>
+    <form id="registration-form">
+        <label for="username">Username:</label>
+        <input type="text" id="username" required><br>
+
+        <label for="password">Password (at least 12 characters):</label>
+        <input type="password" id="password" required minlength="12"><br>
+
+        <label for="confirm-password">Confirm Password:</label>
+        <input type="password" id="confirm-password" required minlength="12"><br>
+
+        <label>
+            <input type="checkbox" id="accept-terms"> I accept the terms of service
+        </label><br>
+
+        <label for="country">Select your country:</label>
+        <select id="country" required>
+            <option value="">Select your country</option>
+            <!-- country options populate here -->
+        </select><br>
+
+        <button type="submit" id="submit-button" disabled>Submit</button>
+    </form>
+
+    <div id="welcome-message" style="display: none;"></div>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/script.js"></script>
 </body>
-
 </html>

@@ -16,6 +16,21 @@ document.addEventListener("DOMContentLoaded", function () {
         countrySelect.appendChild(option);
     });
 
+    function populateCountryOptions() { // lol forgot this
+        const defaultOption = document.createElement("option");
+        defaultOption.value = "";
+        defaultOption.textContent = "Select your country";
+        countrySelect.appendChild(defaultOption);
+
+        countries.forEach(function (country) {
+            const option = document.createElement("option");
+            option.value = country.code;
+            option.textContent = country.name;
+            countrySelect.appendChild(option);
+        });
+    }
+
+
     // check all form reqs
     function checkFormRequirements() {
         const isUsernameValid = usernameInput.value.trim() !== "";
